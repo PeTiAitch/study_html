@@ -57,7 +57,7 @@ table {
     White:
     #f4f3f2
 -----------------------------------------------------*/
-/* -------------------Clearing–––––––––––––––––––––– */
+/* -------------------Clearing and Utility Classes –––––––––––––––––––––– */
 .clear-fix {
   content: "";
   display: table;
@@ -67,7 +67,15 @@ table {
 .clear {
    clear: both; 
 }
-
+.hidden  {
+    /* hide content visually, but not from screen readers*/ 
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
 /* --------------- Type ------------------ */
 
 h1, h2, h3, h4, h5, h6, p, aside {
@@ -103,7 +111,7 @@ h3 {
   margin-top: 0.93333333em;
   margin-bottom: 0.93333333em;
 }
-h4 {
+h4, .subheading {
   font-size: 1em;
   line-height: 1.555555556em;
   margin-top: 1.55555556em;
